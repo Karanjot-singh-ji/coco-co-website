@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 45 33% 97%;
+    --foreground: 25 25% 20%;
+
+    --card: 45 40% 98%;
+    --card-foreground: 25 25% 20%;
+
+    --popover: 45 40% 98%;
+    --popover-foreground: 25 25% 20%;
+
+    /* Primary - Warm Cocoa Brown */
+    --primary: 25 35% 32%;
+    --primary-foreground: 45 40% 98%;
+
+    /* Secondary - Botanical Sage Green */
+    --secondary: 82 35% 42%;
+    --secondary-foreground: 45 40% 98%;
+
+    /* Muted - Soft Cream */
+    --muted: 45 30% 92%;
+    --muted-foreground: 25 15% 45%;
+
+    /* Accent - Golden Honey */
+    --accent: 40 70% 55%;
+    --accent-foreground: 25 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 25% 85%;
+    --input: 35 25% 85%;
+    --ring: 25 35% 32%;
+
+    --radius: 0.75rem;
+
+    /* Extended Palette for Product Cards */
+    --lavender: 270 40% 75%;
+    --rose: 350 50% 80%;
+    --sage: 120 25% 75%;
+    --saffron: 45 80% 60%;
+    --charcoal: 0 0% 25%;
+    --honey: 40 75% 55%;
+    --earth: 30 30% 50%;
+    --coffee: 25 40% 30%;
+    --aloe: 120 45% 50%;
+    --cream: 45 45% 92%;
+    --citrus: 35 85% 60%;
+    --pink: 350 60% 85%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 40% 98%) 0%, hsl(45 30% 92%) 100%);
+    --gradient-botanical: linear-gradient(180deg, hsl(82 35% 42% / 0.05) 0%, hsl(82 35% 42% / 0.15) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(25 35% 32% / 0.1) 0%, hsl(40 70% 55% / 0.1) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 35% 32% / 0.12);
+    --shadow-card: 0 8px 32px -8px hsl(25 35% 32% / 0.15);
+    --shadow-elevated: 0 20px 60px -15px hsl(25 35% 32% / 0.2);
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 20% 10%;
+    --foreground: 45 30% 92%;
+
+    --card: 25 20% 12%;
+    --card-foreground: 45 30% 92%;
+
+    --popover: 25 20% 12%;
+    --popover-foreground: 45 30% 92%;
+
+    --primary: 45 40% 85%;
+    --primary-foreground: 25 25% 15%;
+
+    --secondary: 82 30% 55%;
+    --secondary-foreground: 25 20% 10%;
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 45 20% 65%;
+
+    --accent: 40 65% 50%;
+    --accent-foreground: 25 25% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 15% 25%;
+    --input: 25 15% 25%;
+    --ring: 45 40% 85%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-botanical {
+    background: var(--gradient-botanical);
+  }
+
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-loader-reveal {
+    animation: loaderReveal 1.5s ease-in-out forwards;
+  }
+
+  .animate-leaf-part {
+    animation: leafPart 1.2s ease-out forwards;
+  }
+
+  .animate-gentle-float {
+    animation: gentleFloat 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes loaderReveal {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+    pointer-events: none;
+  }
+}
+
+@keyframes leafPart {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(var(--leaf-direction, 100px)) rotate(var(--leaf-rotate, 15deg));
+    opacity: 0;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
