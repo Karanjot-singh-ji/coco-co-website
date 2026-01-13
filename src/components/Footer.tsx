@@ -134,8 +134,7 @@ const Footer = () => {
 
           {/* Made with love */}
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
-            <span>Made By</span>
-            <span>CodeVerses</span>
+            <span>Made By CodeVerses</span>
           </div>
 
           {/* Legal Links */}

@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# COCO & CO. | Nature's Touch for You
 
-## Project info
+<div align="center">
+  <img src="src/assets/coco-logo.png" alt="COCO & CO. Logo" width="200" />
+  <p><em>"Because your daily cleansing deserves to be a ritual, not a routine."</em></p>
+</div>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## About the Brand
 
-There are several ways of editing your application.
+**COCO & CO.** exists to transform the everyday ritual of cleansing into an art of indulgence. Each bar is meticulously handcrafted from the world's purest edible-grade botanicals. We are the custodians of purity, marrying ancient craft with modern elegance to unveil soaps that are not merely skincare, but a sensorial journey into refinement, wellness, and enduring luxury.
 
-**Use Lovable**
+## Our Philosophy
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+We believe in democratizing purity. Our core values define every product we create:
 
-Changes made via Lovable will be committed automatically to this repo.
+*   **100% Organic**: Pure botanicals only. We strictly avoid synthetic fillers to ensure the highest quality.
+*   **Chemical-Free**: Free from harmful additives, parabens, and sulfates. Your skin deserves only the best.
+*   **Cruelty-Free**: We are committed to ethical practices. Our products are never tested on animals.
+*   **Handcrafted**: Made with care and attention to detail in small batches to preserve potency and quality.
 
-**Use your preferred IDE**
+## Product Collection
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Explore our range of luxury handcrafted soaps designed for specific skin needs:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+*   **Lavender Calm**: Soothing relaxation with French lavender essence.
+*   **Rose Reverie**: Elegant floral notes for a romantic indulgence.
+*   **Kesar Chandan**: Traditional saffron and sandalwood for a natural glow.
+*   **Aloe Pure**: Gentle hydration for sensitive skin.
+*   **Coffee Revive**: Energizing exfoliation with premium coffee grounds.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Technical Architecture
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This project is a modern web application designed for performance and scalability, utilizing the following technologies:
 
-# Step 3: Install the necessary dependencies.
-npm i
+*   **Vite**: Utilized for its rapid build times and efficient Hot Module Replacement (HMR).
+*   **React**: The core library for building a dynamic and responsive component-based user interface.
+*   **TypeScript**: Ensures type safety and improves code maintainability across the application.
+*   **Tailwind CSS**: A utility-first CSS framework enabling rapid UI development with a consistent design system.
+*   **Framer Motion**: Integrated for creating fluid, production-ready animations and transitions.
+*   **Radix UI**: Provides unstyled, accessible components as building blocks for a high-quality design system.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Getting Started
 
-**Edit a file directly in GitHub**
+To set up the project locally, please follow these instructions:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+*   Node.js (v18.0.0 or higher)
+*   npm (v9.0.0 or higher)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Karanjot-singh-ji/coco-co-website.git
+    cd coco-co-website
+    ```
 
-This project is built with:
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
-## How can I deploy this project?
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+    The build artifacts will be stored in the `dist/` directory.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<div align="center">
+  <p>Est. 2024 | COCO & CO.</p>
+</div>
